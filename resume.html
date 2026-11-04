@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO-DATA</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            color: #000;
+}
+
+        .container {
+            background-color: #ffffff;
+            width: 800px;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        /* Title Styling */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin: 0;
+            display: inline-block;
+            border-bottom: 3px solid #000;
+            padding-bottom: 2px;
+        }
+
+        /* Section Headers */
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Main Content Layout */
+        .personal-data-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .form-left {
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+
+        .photo-box {
+            width: 170px;
+            height: 190px;
+            border: 1px solid #ccc;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #e0e0e0;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Row Layouts */
+        .row {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 8px;
+            font-size: 13.5px;
+            line-height: 1.2;
+        }
+
+        .label {
+            font-weight: bold;
+            white-space: nowrap;
+            margin-right: 5px;
+        }
+
+        .label-gray {
+            font-weight: bold;
+            color: #555;
+            white-space: nowrap;
+            margin-right: 5px;
+        }
+
+        .value {
+            border-bottom: 1px solid #000;
+            flex-grow: 1;
+            padding-left: 5px;
+            font-size: 14px;
+            min-height: 18px;
+        }
+
+        .two-col {
+            display: flex;
+            gap: 15px;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+
+        .flex-2 {
+            flex: 2;
+        }
+
+        /* Educational Background Custom Spacing */
+        .edu-row {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 10px;
+            font-size: 13.5px;
+        }
+
+        .year-label {
+            font-weight: bold;
+            margin-left: 15px;
+            margin-right: 5px;
+            white-space: nowrap;
+        }
+
+        .year-value {
+            border-bottom: 1px solid #000;
+            width: 130px;
+            text-align: center;
+            font-size: 14px;
+            min-height: 18px;
+        }
+
+        .home-button {
+           display: inline-block;
+           background-color: midnightblue;
+           color: beige;
+           padding: 10px 22px;
+           text-decoration: none;
+           font-family: 'Times New Roman', Times, serif;
+           font-size: 16px;
+           font-weight: bold;
+           border-radius: 5px;
+           margin: 20px;
+        }
+
+       .home-button:hover {
+           background-color: mediumpurple;
+           color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Document Title -->
+        <div class="header">
+            <h1>BIO-DATA</h1>
+        </div>
+
+        <!-- Section 1: Personal Data -->
+        <div class="section-title">PERSONAL DATA</div>
+
+        <div class="personal-data-container">
+            <div class="form-left">
+                <div class="row">
+                    <span class="label">Name:</span>
+                    <span class="value">Vanessa Villagarcia Tampepe</span>
+                </div>
+                <div class="row">
+                    <span class="label">Present Address:</span>
+                    <span class="value">Purok Punay, Pulantubig, Dumaguete City</span>
+                </div>
+                <div class="row">
+                    <span class="label">Permanent Address:</span>
+                    <span class="value">Alibabay Panubigan, Canlaon City Negros Oriental</span>
+                </div>
+                <div class="row">
+                    <span class="label">Email Address:</span>
+                    <span class="value">tampepevanessa@gmail.com</span>
+                </div>
+                <div class="row">
+                    <span class="label">Mobile Number:</span>
+                    <span class="value">09776621056</span>
+                </div>
+                <div class="row">
+                    <span class="label">Telephone Number:</span>
+                    <span class="value"></span>
+                </div>
+                <div class="row">
+                    <span class="label">Date of Birth:</span>
+                    <span class="value">January 4, 2007</span>
+                </div>
+                <div class="row">
+                    <span class="label">Place of Birth:</span>
+                    <span class="value">Quirino Ave., Parañaque City</span>
+                </div>
+                <div class="row">
+                    <span class="label">Age:</span>
+                    <span class="value" style="max-width: 50px;">18</span>
+                </div>
+                <div class="row">
+                    <span class="label">Sex:</span>
+                    <span class="value">Female</span>
+                </div>
+            </div>
+
+            <!-- Profile Photo Placeholder -->
+            <div class="photo-box">
+                <!-- Replace 'photo-placeholder.jpg' with your image file path -->
+                <img src="myresume.png" alt="Profile Photo">
+            </div>
+        </div>
+
+        <!-- Remaining Personal Data Fields -->
+        <div class="row">
+            <span class="label">Citizenship:</span>
+            <span class="value">Filipino</span>
+        </div>
+        <div class="row">
+            <span class="label">Nationality:</span>
+            <span class="value">Filipino</span>
+        </div>
+        <div class="row">
+            <span class="label">Weight:</span>
+            <span class="value">63kg</span>
+        </div>
+        <div class="row">
+            <span class="label">Height:</span>
+            <span class="value">151cm</span>
+        </div>
+        <div class="row">
+            <span class="label">Civil Status:</span>
+            <span class="value">Single</span>
+        </div>
+        <div class="row">
+            <span class="label">Spouse:</span>
+            <span class="value"></span>
+        </div>
+        <div class="row">
+            <span class="label">Occupation:</span>
+            <span class="value"></span>
+        </div>
+        <div class="row">
+            <span class="label">Name of Children:</span>
+            <span class="value"></span>
+        </div>
+        <div class="row">
+            <span class="label">Date of Birth:</span>
+            <span class="value"></span>
+        </div>
+
+        <!-- Parent Details Row -->
+        <div class="two-col">
+            <div class="row flex-2">
+                <span class="label">Father's Name:</span>
+                <span class="value">Maximeno A. Tampepe</span>
+            </div>
+            <div class="row flex-1">
+                <span class="label">Occupation:</span>
+                <span class="value">Laborer</span>
+            </div>
+        </div>
+
+        <div class="two-col">
+            <div class="row flex-2">
+                <span class="label">Mother's Name:</span>
+                <span class="value">Annie V. Tampepe</span>
+            </div>
+            <div class="row flex-1">
+                <span class="label">Occupation:</span>
+                <span class="value">OFW</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <span class="label-gray">Language or dialect spoken and written:</span>
+            <span class="value">Bisaya, Tagalog, English</span>
+        </div>
+        <div class="row">
+            <span class="label-gray">Person to be contacted in case of emergency:</span>
+            <span class="value">Annie V. Tampepe</span>
+        </div>
+        <div class="row">
+            <span class="label-gray">Contact Number:</span>
+            <span class="value">09158746146</span>
+        </div>
+
+        <br>
+
+        <!-- Section 2: Educational Background -->
+        <div class="section-title">EDUCATIONAL BACKGROUND</div>
+
+        <div class="edu-row">
+            <span class="label">Elementary:</span>
+            <span class="value">Macario Española Memorial School</span>
+            <span class="year-label">Year Graduated:</span>
+            <span class="year-value">2013 - 2019</span>
+        </div>
+
+        <div class="edu-row">
+            <span class="label">High School:</span>
+            <span class="value">Jose B. Cardenas Memorial High School - Uptown Campus</span>
+            <span class="year-label">Year Graduated:</span>
+            <span class="year-value">2019 - 2025</span>
+        </div>
+
+         <div class="edu-row">
+            <span class="label">Vocational:</span>
+            <span class="value"></span>
+            <span class="year-label">Year Graduated:</span>
+            <span class="year-value"></span>
+        </div>
+
+    </div>
+    <!-- End of the resume container -->
+
+    <!-- HOME BUTTON AT THE VERY BOTTOM -->
+    <a href="Navigation Bar.html#home" class="home-button">
+        ⌂ HOME
+    </a>
+
+</body>
+</html>
